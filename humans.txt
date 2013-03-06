@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Seth Wolfwood (Woodworth) -- Titular portfolio owner -- @sethish
+
+# THANKS
+
+    HTML5boilerplate.com
+
+# TECHNOLOGY COLOPHON
+
+    nginx, linux
+    HTML5, CSS3
+    jQuery, Modernizr
