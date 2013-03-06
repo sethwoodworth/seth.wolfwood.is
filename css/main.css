@@ -104,8 +104,18 @@ img {
     border: 3px solid #c3c3c4;
     box-shadow: 10px 10px 0 #c3c3c4;
 }
+
 .right {
-  float: right
+    float: right
+}
+
+table {
+  width: 90%;
+  margin: auto;
+}
+
+td {
+  width: 50%;
 }
 
 
