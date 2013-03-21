@@ -85,6 +85,14 @@ h1 em:hover {
   font-style: normal;
 }
 
+h2 {
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
 a {
   color: #02cde5;
   text-decoration: none;
@@ -251,6 +259,7 @@ nav a:hover {
     nav {
         float: right;
         width: 50%;
+        margin-right: -54px;
     }
 
 /* ============
