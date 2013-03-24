@@ -62,7 +62,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px 'Ubuntu', san-serif;
+    font: 16px/1.4em 'Ubuntu', san-serif;
     background-color: #f3f3f3;
 }
 
@@ -124,6 +124,29 @@ table {
 
 td {
   width: 50%;
+}
+
+blockquote li {
+  list-style-type: none;
+}
+
+a.anchor {
+  margin-left: -1.5em;
+  padding-right: 0.7em;
+  color: white;
+}
+
+.anchored {
+  display: inline;
+}
+
+hgroup:hover a {
+  color: black;
+}
+
+
+section.edu, section.archive, section.code {
+  margin-top: 55px;
 }
 
 
@@ -242,11 +265,11 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .main aside {
+    /*.main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    }*/
 
 /* ============
     WIDE: Menu
@@ -270,10 +293,10 @@ nav a:hover {
         float: left;
     }
 
-    .main aside {
+    /*.main aside {
         float: right;
         width: 28%;
-    }
+    }*/
 }
 
 @media only screen and (min-width: 1140px) {
