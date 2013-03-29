@@ -39,6 +39,11 @@ img {
     vertical-align: middle;
 }
 
+article {
+    margin-bottom: 13px;
+    width: 100%;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -56,6 +61,31 @@ textarea {
     padding: 0.2em 0;
 }
 
+aside#left {
+    top: 128px;
+    position: fixed;
+    width: 50%;
+
+}
+
+nav#topic {
+    float: right;
+    margin-right: 340px;
+    width: auto;
+}
+
+aside#left a {
+    font-size: 12px;
+}
+
+/*// UNPUBLISHED subsections*/
+/*// OER section doesnt fit the overall flow without more content*/
+#oer, #yawnlog {
+    display: none;
+}
+
+
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -63,7 +93,6 @@ textarea {
 
 body {
     font: 16px/1.4em 'Ubuntu', san-serif;
-    background-color: #f3f3f3;
 }
 
 header.head {
@@ -103,14 +132,14 @@ a:hover {
 }
 
 .wrapper {
-    padding: 0 60px;
+    padding: 0;
     margin: 0 5%;
-    background-color: white;
 }
 
 img {
     border: 3px solid #c3c3c4;
     box-shadow: 10px 10px 0 #c3c3c4;
+    margin: 1em;
 }
 
 .right {
@@ -134,10 +163,11 @@ a.anchor {
   margin-left: -1.5em;
   padding-right: 0.7em;
   color: white;
+  float: right;
 }
 
 .anchored {
-  display: inline;
+  display: block;
 }
 
 hgroup:hover a {
@@ -154,18 +184,18 @@ section.edu, section.archive, section.code {
     MOBILE: Menu
    ============== */
 
-nav ul {
+header nav ul {
     margin: 0;
     padding: 0;
 }
 
-nav a {
+header nav a {
     color: #02cde5;
     font-size: 30pt;
     text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #ff7200;
 }
 
@@ -228,7 +258,7 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
+    header nav a {
         float: left;
         width: 20px;
         margin: 0 1.7%;
@@ -236,11 +266,11 @@ nav a:hover {
         margin-bottom: 0;
     }
 
-    nav li:first-child a {
+    header nav li:first-child a {
         margin-left: 0;
     }
 
-    nav li:last-child a {
+    header nav li:last-child a {
         margin-right: 0;
     }
 
@@ -248,7 +278,7 @@ nav a:hover {
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    nav ul li {
+    header nav ul li {
         display: inline;
         float: left;
         padding-right: 40px;

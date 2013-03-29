@@ -20,44 +20,43 @@
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
-  <body>
+  <body itemprop itemtype="http://schema.org/Person">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="head wrapper clearfix">
-      <h1 class="title">seth<em>@sethish</em><br/>Seth Wolfwood</h1>
+    <div class="main wrapper clearfix">
+      <header class="head  clearfix">
+        <h1 class="title">seth<em>@sethish</em><br/><span itemprop="name">Seth Wolfwood</span></h1>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0x49C79C5B0C6F1FE9CE8B85B566BD9FB5CA70C079&op=index">
-              <i class="icon-key"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sethwoodworth">
-              <i class="icon-github-alt"></i>
-            </a>
-          </li>
-          <li><a href="https://twitter.com/sethish"><i class="icon-twitter"></i></a></li>
-          <li>
-            <a href="http://www.flickr.com/photos/sethwoodworth">
-              <i class="icon-camera-retro"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/profile/view?id=4874514">
-              <i class="icon-linkedin-sign"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav>
+          <ul>
+            <li>
+              <a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0x49C79C5B0C6F1FE9CE8B85B566BD9FB5CA70C079&op=index">
+                <i class="icon-key"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sethwoodworth">
+                <i class="icon-github-alt"></i>
+              </a>
+            </li>
+            <li><a href="https://twitter.com/sethish"><i class="icon-twitter"></i></a></li>
+            <li>
+              <a href="http://www.flickr.com/photos/sethwoodworth">
+                <i class="icon-camera-retro"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/profile/view?id=4874514">
+                <i class="icon-linkedin-sign"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class="main-container">
-      <div class="main wrapper clearfix">
-        <blockquote>
+        <blockquote id="#about" itemprop="description">
           I care deeply about:<br>
             Education with computers.
             Archiving data for the public commons.
@@ -67,46 +66,70 @@
         <section id=education>
           <hgroup>
             <h1 class=anchored>
-              <a href="#education" name="education" class=anchor alt="Permalink to this section">&sect;</a>
+              <a href="#education" class=anchor>&sect;</a>
               Computer based Education
               </h1>
           </hgroup>
+
           <p>
-            I can't imagine a future that doesn't involve computers as the primary means of education.
-            Powerful educational tools and software have been built that take advantage of the medium of computers.
-            And projects like One Laptop per Child are testing
+            Computers can make education better.
+            There is already powerful educational software that takes advantage of the medium of computers for logical thinking, science, engineering and technology.
+            And programs like One Laptop per Child are working on computer access,
+            and to some degree software enviroments for education.
+          </p>
+          <p>
+            But there aren't enough rich enviroments for the 
+            humanities, reading comprehension, or literature.
+            These are the problems I want to work on.
+            Especially in combination with my work in archiving public domain content
+            and making that content available.
           </p>
 
-          <article id=olpc class=edu>
+          <section id=olpc class=edu>
             <hgroup>
-              <a href="#olpc" name="olpc" class=anchor alt="Permalink to this section">&sect;</a>
+              <a href="#olpc" class=anchor>&sect;</a>
               <h3 class=anchored>
                 One Laptop per Child
               </h3>
             </hgroup>
 
             <p>
-              I started my involvement with the One Laptop per Child project in 02005,
-              trying to get involved in organizing and manging Open Educational Resourcs.
-              I saw the XO laptop as an obvious method for delivering educational content with a permissive license.
+              The
+              <dfn id=def-olpc title='One Laptop per Child'>
+                One Laptop per Child
+                <abbr>OLPC</abbr>
+              </dfn>
+              project that produced an inexpensive laptop designed for children in developing countries.
+              Initially, I volunteered with
+              <abbr title='One Laptop per Child'>OLPC</abbr>
+              in 02005, curating
+              <dfn id=def-oer title='Open Educational Resources'>Open Educational Resources</dfn>.
             </p>
 
             <p>
-              In <time datetime="2008">02008</time> I moved to Boston to work for the
-              One Laptop per Child Foundation.
-              I worked there for two years,
-              starting with working on curating Open Educational Resources,
-              and eventually running logistics for the Give One Get One campaign in 2009.
+              In <time datetime="2008-06-11">02008</time> I moved to Boston to work for
+              OLPC full time, continuing my work on <abbr title='Open Educational Resources'>OER</abbr>,
+              and eventually writing software,
+              running media and shipping logistics for the Give One Get One campaign in 02009,
+              and managing/editing the <a href="http://laptop.org/manual/">OLPC/Sugar manual</a>.
+            </p>
+            <p>
+              I no longer work for OLPC, but I do work on projects such as:
+              the <a href="http://sugarlabs.org/">Sugar Learning Platform</a>,
+              and the <a href="https://github.com/pathagarbooks/pathagar">Pathagar book server</a>.
             </p>
 
-            <a href="http://www.flickr.com/photos/sethwoodworth/3530859567/"
-                title="Saturday Project: OLPC (XO-1) and Lilypad by isforinsects, on Flickr">
-              <img src="http://farm4.static.flickr.com/3396/3530859567_2bf216bccf.jpg"
-                  width="500" height="375" alt="Saturday Project: OLPC (XO) and Lilypad" />
-            </a>
-          </article> <!-- #olpc -->
+            <div style='margin: auto'>
+              <a href="http://www.flickr.com/photos/sethwoodworth/3530859567/"
+                  title="Saturday Project: OLPC (XO-1) and Lilypad by isforinsects, on Flickr">
+                <img src="http://farm4.static.flickr.com/3396/3530859567_2bf216bccf.jpg"
+                    width="500" height="375" alt="Saturday Project: OLPC (XO) and Lilypad"
+                    style="display:block;margin:auto;">
+              </a>
+            </div>
+          </section> <!-- #olpc -->
 
-          <article id=oneville>
+          <section id=oneville>
             <header>
               <h3>OneVille Project, HGSE</h3>
             </header>
@@ -121,21 +144,27 @@
               I worked on the OneVille project from 02009-02010, first as an advisor and technologist, and later as the Project Manager.
             </p>
           </section> <!-- #oneville -->
-        </article> <!-- #education -->
+        </section> <!-- #education -->
 
         <section id=archivist>
           <header>
             <h1 class=anchored>
-              <a href="#archivist" name="archivist" class="anchor" alt="Permalink to this section">&sect;</a>
+              <a href="#archivist" class=anchor>&sect;</a>
               Digital Archivist
             </h1>
           </header>
           <p>
+            <!-- intro -->
             Books, images and other resources that are out of copyright
             no longer belong to their original authors, editors or photographers.
             They belong to all of us.
             The curation and archival in the digital domain is important,
             and not enough people are working to make these cultural resources available.
+          <p>
+            <!-- public domain material -->
+            Some of the this content
+          </p>
+          <p>
             So when I find a resource that can be preserved, I preserve it.
           </p>
           <p>
@@ -143,48 +172,67 @@
             and often, polite emails to website maintainers.
           </p>
 
-          <article>
+          <div>
             <ul>
               <li>
-                <div>Encyclopedia Dramatica</div>
-                <div>over 9000 articles</div>
+                Encyclopedia Dramatica -- over 9000 pages archived
               </li>
 
               <li>
-                <div>CDC Public Health Image Library</div>
-                <div>15,000 hi-res public domain images</div>
+                CDC Public Health Image Library -- 15,000 hi-res public domain images
+
+
+
+                  <section id=oer>
+                    <header>
+                      <h2>Open Educational Resources</h2>
+                    </header>
+                    <p>
+                      Public domain works are an important part of creativity and generativity on the internet
+                      and elsewhere. US government produced works are in the public domain, but not always easy
+                      to access. Taking initiative from projects like
+                      <a href='http://public.resource.org'>public.resource.org</a> I took it upon myself to
+                      index, archive, and re-publish a 30,000+ <a href="http://phil.cdc.gov">image library</a>
+                      from the CDC.
+                    </p>
+
+                    <a href="http://www.flickr.com/photos/sethwoodworth/4193300846/"
+                        title="foodborne pathogens? by isforinsects, on Flickr">
+                      <img src="http://farm5.static.flickr.com/4009/4193300846_363032ebbb_o.jpg"
+                          width="500" height="332" alt="foodborne pathogens?" />
+                    </a>
+
+                    <p>
+                      My <a href="http://cdc-phil.releaseourdata.com">version of the repository</a> is a
+                      preliminary step. Next steps are a better full-text and metadata search function
+                      and to upload the images and metadata to
+                      <a href="http://commons.wikimedia.org/">Wikimedia Commons</a> and
+                      <a href="http://archive.org">Archive.org</a>.
+                    </p>
+                  </section id=oer>
               </li>
 
               <li>
-                <div>Twitter: Iran Election 02009</div>
-                <div>2 million tweets in four langauges</div>
+                Twitter: Iran Election 02009 -- 2 million tweets in four langauges
               </li>
 
               <li>
-                <div>Twitter: Afghanistan Election 02009</div>
-                <div>500,000 tweets in six langauges</div>
+                Twitter: Afghanistan Election 02009 -- 500,000 tweets in six langauges
               </li>
 
               <li>
-                <div>Project Gutenberg</div>
-                <div>38,000 books, now collaboratively edited on <a href="https://gitenberg.github.com">Github</a></div>
+                Project Gutenberg -- 38,000 books, now collaboratively edited on <a href="https://gitenberg.github.com">Github</a>
               </li>
 
               <li>
-                <div>Hathi Trust</div>
-                <div>240,000 public domain journal articles and published books</div>
-              </li>
-
-              <li>
-                <div>Hathi Trust</div>
-                <div>240,000 public domain journal articles and published books</div>
+                Hathi Trust -- 240,000 public domain journal divs and published books
               </li>
 
             </ul>
-          </article>
+          </div>
 
 
-          <article id=webecology>
+          <section id=webecology>
             <header>
               <h2>Web Ecology Project</h2>
             </header>
@@ -221,14 +269,15 @@
                   <img src="./img/bigdata-small-final.jpg"
                       alt="Web Ecolocy Influence Analysis chart" />
               </a>
-          </article> <!-- #webecology -->
+          </section> <!-- #webecology -->
         </section> <!-- #archivist -->
 
 
         <section id=code>
           <header>
             <h1 class=anchored>
-              <a href="#education" name="education" class="anchor" alt="Permalink to this section">&sect;</a>
+              <a href="#code" class="anchor">
+                &sect;</a>
               Free and open source software
             </h1>
           </header>
@@ -239,7 +288,7 @@
             TODO: Write a paragraph or two about free and open source software.
           </p>
 
-          <article id=yawnlog>
+          <section id=yawnlog>
             <header>
               <h2>Yawnlog</h2>
             </header>
@@ -254,10 +303,10 @@
 
             <p>
               We started getting press and links the day of launch,
-              a solid review from 
-              <a href="http://www.killerstartups.com/Web-App-Tools/beta-yawnlog-com-a-new-sleep-tracker"> Killer Startups</a>, 
-              an article in <a href="http://www.readwriteweb.com/archives/yawnlog_a_social_sleep_tracker.php">ReadWriteWeb</a>, 
-              an episode of the <a href="http://chris.pirillo.com/how-to-track-your-sleep-habits/"> Chris Pirillo show</a>, 
+              a solid review from
+              <a href="http://www.killerstartups.com/Web-App-Tools/beta-yawnlog-com-a-new-sleep-tracker"> Killer Startups</a>,
+              an article in <a href="http://www.readwriteweb.com/archives/yawnlog_a_social_sleep_tracker.php">ReadWriteWeb</a>,
+              an episode of the <a href="http://chris.pirillo.com/how-to-track-your-sleep-habits/"> Chris Pirillo show</a>,
               and a mention by the <a href="http://www.nytimes.com/external/readwriteweb/2009/02/26/26readwriteweb-yawnlog_a_social_sleep_tracker.html"> New York Times</a>.
             </p>
 
@@ -272,84 +321,89 @@
                   src="./img/yawnlog.png"
                   alt="sleep-o-meter" />
             </a>
-          </article> <!-- #yawnlog -->
+          </section> <!-- #yawnlog -->
 
+        </section> <!-- #code -->
 
-
+        <section id=other>
           <header>
-            <h2>Open Educational Resources</h2>
+            <h1>Interests</h1>
           </header>
-          <section>
-            <p>
-              Public domain works are an important part of creativity and generativity on the internet
-              and elsewhere. US government produced works are in the public domain, but not always easy
-              to access. Taking initiative from projects like
-              <a href='http://public.resource.org'>public.resource.org</a> I took it upon myself to
-              index, archive, and re-publish a 30,000+ <a href="http://phil.cdc.gov">image library</a>
-              from the CDC.
-            </p>
 
-            <a href="http://www.flickr.com/photos/sethwoodworth/4193300846/"
-                title="foodborne pathogens? by isforinsects, on Flickr">
-              <img src="http://farm5.static.flickr.com/4009/4193300846_363032ebbb_o.jpg"
-                  width="500" height="332" alt="foodborne pathogens?" />
-            </a>
+          <p>
+            <a href="http://librivox.org">Librivox</a> is a collection of audio books read by volunteers
+            and released into the public domain. It was founded in August
+            <span class="date">02005</span> and I joined the group
+            in <span class="date">January 02006</span>. I am proud to have read, recorded and submitted a
+            <a href="http://librivox.org/newcatalog/people_public.php?peopleid=447">few audio books</a>,
+            mostly poetry and few book chapters.
+          </p>
 
-            <p>
-              My <a href="http://cdc-phil.releaseourdata.com">version of the repository</a> is a
-              preliminary step. Next steps are a better full-text and metadata search function
-              and to upload the images and metadata to
-              <a href="http://commons.wikimedia.org/">Wikimedia Commons</a> and
-              <a href="http://archive.org">Archive.org</a>.
-            </p>
-          </section>
+          <img alt="Seth Woodworth in 15th C. armor" class="right" src="./img/swords.jpg" />
 
-          <header>
-            <h2>Interests</h2>
-          </header>
-          <section>
-            <p>
-              <a href="http://librivox.org">Librivox</a> is a collection of audio books read by volunteers
-              and released into the public domain. It was founded in August
-              <span class="date">02005</span> and I joined the group
-              in <span class="date">January 02006</span>. I am proud to have read, recorded and submitted a
-              <a href="http://librivox.org/newcatalog/people_public.php?peopleid=447">few audio books</a>,
-              mostly poetry and chapters.
-            </p>
+          <p>
+            I study and practice 15c. German longsword. There are a large collection of extant
+            manuscripts from the <span class="date">01300's</span> until the modern day, describing the use of swords
+            and other weapons as a Western Martial Art. I practice in the
+            <a href="http://en.wikipedia.org/wiki/Johannes_Liechtenauer">Liechtenauer</a>
+            tradition, but other schools exist, some of which I've dabbled in.
+          </p>
 
-            <img alt="Seth Woodworth in 15th C. armor" class="right" src="./img/swords.jpg" />
+          <p>
+            I was a part of an organization that performed educational demonstrations on
+            medieval and renaissance martial arts, arms and armor. We performed at schools, libraries,
+            and museums throughout the pacific northwest, notably the Seattle Art Museum's
+            <em>Spain in the Age of Exploration</em> exhibit in <span class="date">02004</span>.
+          </p>
 
-            <p>
-              I study and practice 15c. German longsword. There are a large collection of extant
-              manuscripts from the <span class="date">01300's</span> until the modern day, describing the use of swords
-              and other weapons as a Western Martial Art. I practice in the
-              <a href="http://en.wikipedia.org/wiki/Johannes_Liechtenauer">Liechtenauer</a>
-              tradition, but other schools exist, some of which I've dabbled in.
-            </p>
+          <p>
+            Stage combat and performance is a big part of demonstrations like this. I've had the
+            opportunity to act and perform stage combat on a few occasions, one of which resulted in
+            an <a href="http://www.imdb.com/name/nm3736097/">imdb</a> entry.
+          </p>
+        </section>
+      </div> <!-- #main -->
 
-            <p>
-              I was a part of an organization that performed educational demonstrations on
-              medieval and renaissance martial arts, arms and armor. We performed at schools, libraries,
-              and museums throughout the pacific northwest, notably the Seattle Art Museum's
-              <em>Spain in the Age of Exploration</em> exhibit in <span class="date">02004</span>.
-            </p>
+      <aside id=left>
+        <nav id=topic>
+          <ul>
+            <li><a href='#about'>Seth Wolfwood</a></li>
+            <li>
+              <a href='#education'>about education</a>
+              <ul>
+                <li>@ OLPC</li>
+                <li>@ OneVille</li>
+              </ul>
+            </li>
+            <li>
+              <a href='#archiving'>about archiving</a>
+              <ul>
+                <li>
+                  <a href="#archivist">+ archive log</a>
+                </li>
+                <li>
+                  <a href="#webecology">+ web ecology project</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#code'>about code</a>
+              <ul>
+                <li>
+                  <a href="#archivist">+ archive log</a>
+                </li>
+                <li>
+                  <a href="#webecology">+ web ecology project</a>
+                </li>
+              </ul>
 
-            <p>
-              Stage combat and performance is a big part of demonstrations like this. I've had the
-              opportunity to act and perform stage combat on a few occasions, one of which resulted in
-              an <a href="http://www.imdb.com/name/nm3736097/">imdb</a> entry.
-            </p>
-          </section>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
 
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
 
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
-        </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
