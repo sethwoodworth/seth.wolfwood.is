@@ -20,7 +20,8 @@
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
-  <body itemprop itemtype="http://schema.org/Person">
+  <body itemprop itemtype="http://schema.org/Person"
+        data-spy="scroll" data-target="#topic">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -56,7 +57,7 @@
         </nav>
       </header>
 
-        <blockquote id="#about" itemprop="description">
+        <blockquote id="about" itemprop="description">
           I care deeply about:<br>
             Education with computers.
             Archiving data for the public commons.
@@ -64,12 +65,12 @@
         </blockquote>
 
         <section id=education>
-          <hgroup>
+          <header>
             <h1 class=anchored>
               <a href="#education" class=anchor>&sect;</a>
-              Computer based Education
+              Computer Education
               </h1>
-          </hgroup>
+          </header>
 
           <p>
             Computers can make education better.
@@ -78,19 +79,19 @@
             and to some degree software enviroments for education.
           </p>
           <p>
-            But there aren't enough rich enviroments for the 
+            But there aren't enough rich enviroments for the
             humanities, reading comprehension, or literature.
             These are the problems I want to work on.
             Especially in combination with my work in archiving public domain content
             and making that content available.
           </p>
 
-          <section id=olpc class=edu>
+          <section id=olpc class="edu subsection">
             <hgroup>
               <a href="#olpc" class=anchor>&sect;</a>
-              <h3 class=anchored>
+              <h2 class=anchored>
                 One Laptop per Child
-              </h3>
+              </h2>
             </hgroup>
 
             <p>
@@ -131,7 +132,11 @@
 
           <section id=oneville>
             <header>
-              <h3>OneVille Project, HGSE</h3>
+              <h2 class=anchored>
+                <a href="#oneville" class=anchor>&sect;</a>
+                OneVille Project,
+                <abbr title="Harvard Graduate School of Education">HGSE</abbr>
+              </h2>
             </header>
             <p>
               The <a href="http://wiki.oneville.org">OneVille Project</a> was a two-year Ford funded
@@ -150,7 +155,7 @@
           <header>
             <h1 class=anchored>
               <a href="#archivist" class=anchor>&sect;</a>
-              Digital Archivist
+              Digital Archival
             </h1>
           </header>
           <p>
@@ -172,7 +177,13 @@
             and often, polite emails to website maintainers.
           </p>
 
-          <div>
+          <section id=archivelog>
+            <header>
+              <h2 class=anchored>
+                <a href="#archivelog" class=anchor>&sect;</a>
+                Archive Log
+              </h2>
+            </header>
             <ul>
               <li>
                 Encyclopedia Dramatica -- over 9000 pages archived
@@ -229,7 +240,7 @@
               </li>
 
             </ul>
-          </div>
+          </section>
 
 
           <section id=webecology>
@@ -282,10 +293,18 @@
             </h1>
           </header>
           <p>
-            TODO: Write a paragraph or two about free and open source software.
-            TODO: Write a paragraph or two about free and open source software.
-            TODO: Write a paragraph or two about free and open source software.
-            TODO: Write a paragraph or two about free and open source software.
+            The number of things that you can do with a computer is stunning.
+            Contrawise, the number of things you <em>need</em> a computer for is staggering.
+            I am concerned about software being a barrier on access to computing.
+            For this reason, and a host of others, I support
+            <dfn>free and open source software (<abbr>FOSS</abbr>)</dfn>.
+          </p>
+          <p>
+            I support FOSS by using free software,
+            by donating to FOSS projects,
+            by contributing to existing software projects,
+            and by releasing the software I
+            <a href="https://github.com/sethwoodworth">write</a> under Free Software licenses.
           </p>
 
           <section id=yawnlog>
@@ -365,41 +384,50 @@
       </div> <!-- #main -->
 
       <aside id=left>
-        <nav id=topic>
+        <div class="spacer">
+        <nav id="table-of-contents">
           <ul>
-            <li><a href='#about'>Seth Wolfwood</a></li>
             <li>
-              <a href='#education'>about education</a>
-              <ul>
-                <li>@ OLPC</li>
-                <li>@ OneVille</li>
-              </ul>
-            </li>
-            <li>
-              <a href='#archiving'>about archiving</a>
+              <a href='#education'>▽ computer education</a>
               <ul>
                 <li>
-                  <a href="#archivist">+ archive log</a>
+                  <a href="#olpc">
+                    ⨽ OLPC
+                  </a>
                 </li>
                 <li>
-                  <a href="#webecology">+ web ecology project</a>
+                  <a href="#oneville">
+                    ⨽ OneVille
+                  </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href='#code'>about code</a>
+              <a href='#archivist'>▽ digital archival</a>
               <ul>
                 <li>
-                  <a href="#archivist">+ archive log</a>
+                  <a href="#archivelog">⨽ archive log</a>
                 </li>
                 <li>
-                  <a href="#webecology">+ web ecology project</a>
+                  <a href="#webecology">⨽ web ecology project</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#code'>▽ writing code</a>
+              <ul>
+                <li>
+                  <a href="#archivist">⨽ archive log</a>
+                </li>
+                <li>
+                  <a href="#webecology">⨽ web ecology project</a>
                 </li>
               </ul>
 
             </li>
           </ul>
         </nav>
+        </div>
       </aside>
 
 

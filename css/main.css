@@ -14,6 +14,7 @@ body {
     font-size: 16pt;
     line-height: 1.4;
     color: #555555;
+    background-color: #fafafa;
 }
 
 ::-moz-selection {
@@ -61,21 +62,62 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* indented text */
+div.main {
+    z-index: 10;
+    background-color: white;
+    padding: 0 30px 0 20px;
+}
+
+section.subsection {
+    padding-left: 20px;
+}
+
 aside#left {
     top: 128px;
     position: fixed;
     width: 50%;
-
-}
-
-nav#topic {
-    float: right;
-    margin-right: 340px;
-    width: auto;
+    z-index: 1; /* so hoverstates do not break for h#s */
 }
 
 aside#left a {
-    font-size: 12px;
+    color: #afafaf;
+}
+
+.spacer {
+    float: right;
+    width: 536px;
+    z-index: 0;
+}
+
+nav#table-of-contents {
+    float: left;
+    /*margin-right: 341px;*/
+    width: auto;
+    z-index: 5;
+}
+
+nav#table-of-contents:first-child {
+    /* the positioning of the sidebar should line up with the header
+     * so it is important the first ul does not have it's own top margin
+     */
+    margin-top: 0;
+}
+
+nav#table-of-contents ul {
+    padding: 0 0 0 10px;
+}
+
+nav#table-of-contents ul: {
+    padding: 0 0 0 10px;
+}
+
+
+/* ToC nav special cases */
+nav#table-of-contents li.toc-title:before {
+    content: '❧ ';
+    font-size: 30px;
+    margin: .2em 0 0 -1em;
 }
 
 /*// UNPUBLISHED subsections*/
@@ -104,6 +146,10 @@ h1, h2, h3, h4, h5 {
   line-height: 1em;
 }
 
+h1 {
+  margin: 1em 0 .33em -3px;
+}
+
 h1 em {
   color: #02cde5;
   font-style: normal;
@@ -116,6 +162,7 @@ h1 em:hover {
 
 h2 {
   font-size: 27px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -170,10 +217,9 @@ a.anchor {
   display: block;
 }
 
-hgroup:hover a {
+.anchored:hover a {
   color: black;
 }
-
 
 section.edu, section.archive, section.code {
   margin-top: 55px;
