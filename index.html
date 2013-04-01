@@ -16,9 +16,11 @@
     <!-- font-awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <!-- ubuntu & vollkorn google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500|Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Vollkorn' rel='stylesheet' type='text/css'>
 
+    <!--
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    -->
   </head>
   <body itemprop itemtype="http://schema.org/Person"
         data-spy="scroll" data-target="#topic">
@@ -26,75 +28,100 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="main wrapper clearfix">
-      <header class="head  clearfix">
-        <h1 class="title">seth<em>@sethish</em><br/><span itemprop="name">Seth Wolfwood</span></h1>
+    <!--
+    <div id=pre-wrapper>
+      <section id=preheader>
+        asdfasdfasdf asdfasdfasdf asdfasdfasdf
+      </section>
+    </div>
+    -->
 
-        <nav>
-          <ul>
-            <li>
-              <a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0x49C79C5B0C6F1FE9CE8B85B566BD9FB5CA70C079&op=index">
-                <i class="icon-key"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/sethwoodworth">
-                <i class="icon-github-alt"></i>
-              </a>
-            </li>
-            <li><a href="https://twitter.com/sethish"><i class="icon-twitter"></i></a></li>
-            <li>
-              <a href="http://www.flickr.com/photos/sethwoodworth">
-                <i class="icon-camera-retro"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.linkedin.com/profile/view?id=4874514">
-                <i class="icon-linkedin-sign"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <div class="main clearfix">
+
+      <header class="head  clearfix">
+        <div class="left">
+          <h1 class="title"><span itemprop="name">Seth</span>
+        </div> 
+
+        <div class="right">
+          <h1 class="title">Wolfwood</h1>
+        </div> <!-- .right -->
       </header>
 
-        <blockquote id="about" itemprop="description">
-          I care deeply about:<br>
-            Education with computers.
-            Archiving data for the public commons.
-            And writing free and open source software.
-        </blockquote>
+      <section class="section clearfix">
+        <div class="left">
+          <blockquote id="about" itemprop="description">
+              <a href="#education">Digital Educator</a><br/>
+              <a href="#archiving">Data Archivist</a><br/>
+              <a href="#code">Open Sourcerer</a>
+          </blockquote>
+        </div> <!-- .right -->
 
-        <section id=education>
-          <header>
-            <h1 class=anchored>
-              <a href="#education" class=anchor>&sect;</a>
-              Computer Education
-              </h1>
-          </header>
+        <div class="right">
+          <nav id="links">
+            <a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0x49C79C5B0C6F1FE9CE8B85B566BD9FB5CA70C079&op=index">
+              <i class="icon-key"></i>
+            </a>
+            <a href="https://github.com/sethwoodworth">
+              <i class="icon-github-alt"></i>
+            </a>
+            <a href="https://twitter.com/sethish">
+              <i class="icon-twitter"></i>
+              </a>
+            <a href="http://www.flickr.com/photos/sethwoodworth">
+              <i class="icon-camera-retro"></i>
+            </a>
+            <a href="http://www.linkedin.com/profile/view?id=4874514">
+              <i class="icon-linkedin-sign"></i>
+            </a>
+          </nav>
+        </div> <!-- .right -->
+      </section>
 
-          <p>
-            Computers can make education better.
-            There is already powerful educational software that takes advantage of the medium of computers for logical thinking, science, engineering and technology.
-            And programs like One Laptop per Child are working on computer access,
-            and to some degree software enviroments for education.
-          </p>
-          <p>
-            But there aren't enough rich enviroments for the
-            humanities, reading comprehension, or literature.
-            These are the problems I want to work on.
-            Especially in combination with my work in archiving public domain content
-            and making that content available.
-          </p>
+        <hr class=clearfix>
 
-          <section id=olpc class="edu subsection">
-            <hgroup>
-              <a href="#olpc" class=anchor>&sect;</a>
-              <h2 class=anchored>
+        <section id=education class="section clearfix">
+          <div class=left>
+            <header>
+              <h1>
+                <a href="#education" class=anchor>&sect;</a>
+                Computer Education
+                </h1>
+            </header>
+          </div>
+
+          <div class=right>
+            <p class=first>
+              Computers can make education better.
+              There is already powerful educational software that takes advantage of the medium of computers for logical thinking, science, engineering and technology.
+              And programs like One Laptop per Child are working on computer access,
+              and to some degree software enviroments for education.
+            </p>
+            <p>
+              But there aren't enough rich enviroments for the
+              humanities, reading comprehension, or literature.
+              These are the problems I want to work on.
+              Especially in combination with my work in archiving public domain content
+              and making that content available.
+            </p>
+          </div>
+        </section> <!-- #education -->
+
+        <div class=section>
+          <hr class="right clearfix">
+        </div>
+
+        <section id=olpc class="subsection clearfix">
+          <div class=left>
+            <header>
+              <h2>
                 One Laptop per Child
               </h2>
-            </hgroup>
+            </header>
+          </div>
 
-            <p>
+          <div class=right>
+            <p class=first>
               The
               <dfn id=def-olpc title='One Laptop per Child'>
                 One Laptop per Child
@@ -124,13 +151,18 @@
               <a href="http://www.flickr.com/photos/sethwoodworth/3530859567/"
                   title="Saturday Project: OLPC (XO-1) and Lilypad by isforinsects, on Flickr">
                 <img src="http://farm4.static.flickr.com/3396/3530859567_2bf216bccf.jpg"
-                    width="500" height="375" alt="Saturday Project: OLPC (XO) and Lilypad"
-                    style="display:block;margin:auto;">
+                    width="100%" alt="Saturday Project: OLPC (XO) and Lilypad">
               </a>
             </div>
-          </section> <!-- #olpc -->
+          </div> <!-- .right -->
+        </section> <!-- #olpc -->
 
-          <section id=oneville>
+        <div class=section>
+          <hr class="right clearfix">
+        </div>
+
+        <section id=oneville class="subsection clearfix">
+          <div class=left>
             <header>
               <h2 class=anchored>
                 <a href="#oneville" class=anchor>&sect;</a>
@@ -138,7 +170,9 @@
                 <abbr title="Harvard Graduate School of Education">HGSE</abbr>
               </h2>
             </header>
-            <p>
+          </div>
+          <div class=right>
+            <p class=first>
               The <a href="http://wiki.oneville.org">OneVille Project</a> was a two-year Ford funded
               initiative out of the <a href="http://gse.harvard.edu">Harvard Graduate School
               of Education</a>. Primary Investigator <a href="https://cyber.law.harvard.edu/events/luncheon/2010/11/pollock">Mica
@@ -148,49 +182,66 @@
             <p>
               I worked on the OneVille project from 02009-02010, first as an advisor and technologist, and later as the Project Manager.
             </p>
-          </section> <!-- #oneville -->
-        </section> <!-- #education -->
+          </div>
+        </section> <!-- #oneville -->
 
-        <section id=archivist>
-          <header>
-            <h1 class=anchored>
-              <a href="#archivist" class=anchor>&sect;</a>
-              Digital Archival
-            </h1>
-          </header>
-          <p>
-            <!-- intro -->
-            Books, images and other resources that are out of copyright
-            no longer belong to their original authors, editors or photographers.
-            They belong to all of us.
-            The curation and archival in the digital domain is important,
-            and not enough people are working to make these cultural resources available.
-          <p>
-            <!-- public domain material -->
-            Some of the this content
-          </p>
-          <p>
-            So when I find a resource that can be preserved, I preserve it.
-          </p>
-          <p>
-            Here is a short summary of materials I have archived via web scraping
-            and often, polite emails to website maintainers.
-          </p>
+        <div class=section>
+          <hr class=clearfix>
+        </div>
 
-          <section id=archivelog>
+        <section id=archivist class="section clearfix">
+
+          <div class=left>
+            <header>
+              <h1 class=anchored>
+                <a href="#archivist" class=anchor>&sect;</a>
+                Digital Archival
+              </h1>
+            </header>
+          </div>
+          <div class=right>
+            <p class=first>
+              <!-- intro -->
+              Books, images and other resources that are out of copyright
+              no longer belong to their original authors, editors or photographers.
+              They belong to all of us.
+              The curation and archival in the digital domain is important,
+              and not enough people are working to make these cultural resources available.
+            <p>
+              <!-- public domain material -->
+              Some of the this content
+            </p>
+            <p>
+              So when I find a resource that can be preserved, I preserve it.
+            </p>
+            <p>
+              Here is a short summary of materials I have archived via web scraping
+              and often, polite emails to website maintainers.
+            </p>
+          </div>
+        </section> <!-- #archivist -->
+
+        <div class=section>
+          <hr class="clearfix right">
+        </div>
+
+        <section id=archivelog class="subsection clearfix">
+          <div class=left>
             <header>
               <h2 class=anchored>
                 <a href="#archivelog" class=anchor>&sect;</a>
                 Archive Log
               </h2>
             </header>
-            <ul>
-              <li>
+          </div>
+          <div class=right>
+              <p class=first>
                 Encyclopedia Dramatica -- over 9000 pages archived
-              </li>
+              </p>
 
-              <li>
+              <p>
                 CDC Public Health Image Library -- 15,000 hi-res public domain images
+              </p>
 
 
 
@@ -210,7 +261,7 @@
                     <a href="http://www.flickr.com/photos/sethwoodworth/4193300846/"
                         title="foodborne pathogens? by isforinsects, on Flickr">
                       <img src="http://farm5.static.flickr.com/4009/4193300846_363032ebbb_o.jpg"
-                          width="500" height="332" alt="foodborne pathogens?" />
+                          width="100%" alt="foodborne pathogens?" />
                     </a>
 
                     <p>
@@ -221,38 +272,52 @@
                       <a href="http://archive.org">Archive.org</a>.
                     </p>
                   </section id=oer>
-              </li>
 
-              <li>
+              <p>
                 Twitter: Iran Election 02009 -- 2 million tweets in four langauges
-              </li>
+              </p>
 
-              <li>
+              <p>
                 Twitter: Afghanistan Election 02009 -- 500,000 tweets in six langauges
-              </li>
+              </p>
 
-              <li>
+              <p>
                 Project Gutenberg -- 38,000 books, now collaboratively edited on <a href="https://gitenberg.github.com">Github</a>
-              </li>
+              </p>
 
-              <li>
+              <p>
                 Hathi Trust -- 240,000 public domain journal divs and published books
-              </li>
+              </p>
 
             </ul>
+            </div>
           </section>
 
+          <div class=section>
+            <hr class="clearfix right">
+          </div>
 
-          <section id=webecology>
-            <header>
-              <h2>Web Ecology Project</h2>
-            </header>
-              <p>
+          <section id=webecology class="subsection clearfix">
+            <div class=left>
+              <header>
+                <h2>Web Ecology Project</h2>
+              </header>
+            </div>
+            <div class=right>
+              <p class=first>
                 The <a href="http://webecologyproject.org">Web Ecology Project</a> was a research
                 collective based in Cambridge, Massachusetts.  Our agenda was to apply quantitative social
                 science to social media.
               </p>
-              <img class="right" src="http://www.webecologyproject.org/wp-content/uploads/2009/08/WEP-iran.png" width="216" height="279" alt="WebEcologyProject paper on the Iran Election 02009">
+
+              <a href="http://www.webecologyproject.org/2009/09/analyzing-influence-on-twitter/"
+                  title="The Influentials: a new approach for studying influence on Twitter">
+                  <img src="./img/bigdata-small-final.jpg"
+                      alt="Web Ecolocy Influence Analysis chart" 
+                      width="100%"
+                      />
+              </a>
+
               <p>
                 We released our first report <span class="date">June 02009</span>,
                 <em>The Iranian Election on Twitter: The First Eighteen Days</em>.
@@ -275,42 +340,46 @@
                 <a href="http://www.webecologyproject.org/press/">media acclaim</a>.
               </p>
 
-              <a href="http://www.webecologyproject.org/2009/09/analyzing-influence-on-twitter/"
-                  title="The Influentials: a new approach for studying influence on Twitter">
-                  <img src="./img/bigdata-small-final.jpg"
-                      alt="Web Ecolocy Influence Analysis chart" />
-              </a>
-          </section> <!-- #webecology -->
-        </section> <!-- #archivist -->
+          </div><!-- .right -->
+        </section> <!-- #webecology -->
 
+        <hr class=clearfix>
 
-        <section id=code>
-          <header>
-            <h1 class=anchored>
-              <a href="#code" class="anchor">
-                &sect;</a>
-              Free and open source software
-            </h1>
-          </header>
-          <p>
-            The number of things that you can do with a computer is stunning.
-            Contrawise, the number of things you <em>need</em> a computer for is staggering.
-            I am concerned about software being a barrier on access to computing.
-            For this reason, and a host of others, I support
-            <dfn>free and open source software (<abbr>FOSS</abbr>)</dfn>.
-          </p>
-          <p>
-            I support FOSS by using free software,
-            by donating to FOSS projects,
-            by contributing to existing software projects,
-            and by releasing the software I
-            <a href="https://github.com/sethwoodworth">write</a> under Free Software licenses.
-          </p>
+        <section id=code class="section clearfix">
+          <div class=left>
+            <header>
+              <h1 class=anchored>
+                Free and open source software
+              </h1>
+            </header>
+          </div>
+          <div class=right>
+            <p class=first>
+              The number of things that you can do with a computer is stunning.
+              Contrawise, the number of things you <em>need</em> a computer for is staggering.
+              I am concerned about software being a barrier on access to computing.
+              For this reason, and a host of others, I support
+              <dfn>free and open source software (<abbr>FOSS</abbr>)</dfn>.
+            </p>
+            <p>
+              I support FOSS by using free software,
+              by donating to FOSS projects,
+              by contributing to existing software projects,
+              and by releasing the software I
+              <a href="https://github.com/sethwoodworth">write</a> under Free Software licenses.
+            </p>
+          </div>
+        </section> <!-- #code -->
 
-          <section id=yawnlog>
+        <hr class="clearfix right">
+
+        <section id=yawnlog class="subsection clearfix">
+          <div class=left>
             <header>
               <h2>Yawnlog</h2>
             </header>
+          </div>
+          <div class=right>
             <p>
               <a href="http://yawnlog.com">YawnLog</a> is a social sleep tracker originally
               built over a 24.5 hour hackathon. The app was launched with a
@@ -340,46 +409,49 @@
                   src="./img/yawnlog.png"
                   alt="sleep-o-meter" />
             </a>
-          </section> <!-- #yawnlog -->
+          </div>
+        </section> <!-- #yawnlog -->
 
-        </section> <!-- #code -->
 
-        <section id=other>
-          <header>
-            <h1>Interests</h1>
-          </header>
+        <section id=other class=section>
+          <div class=left>
+            <header>
+              <h1>Interests</h1>
+            </header>
+          </div>
+          <div class=right>
+            <p>
+              <a href="http://librivox.org">Librivox</a> is a collection of audio books read by volunteers
+              and released into the public domain. It was founded in August
+              <span class="date">02005</span> and I joined the group
+              in <span class="date">January 02006</span>. I am proud to have read, recorded and submitted a
+              <a href="http://librivox.org/newcatalog/people_public.php?peopleid=447">few audio books</a>,
+              mostly poetry and few book chapters.
+            </p>
 
-          <p>
-            <a href="http://librivox.org">Librivox</a> is a collection of audio books read by volunteers
-            and released into the public domain. It was founded in August
-            <span class="date">02005</span> and I joined the group
-            in <span class="date">January 02006</span>. I am proud to have read, recorded and submitted a
-            <a href="http://librivox.org/newcatalog/people_public.php?peopleid=447">few audio books</a>,
-            mostly poetry and few book chapters.
-          </p>
+            <img alt="Seth Woodworth in 15th C. armor" class="right" src="./img/swords.jpg" />
 
-          <img alt="Seth Woodworth in 15th C. armor" class="right" src="./img/swords.jpg" />
+            <p>
+              I study and practice 15c. German longsword. There are a large collection of extant
+              manuscripts from the <span class="date">01300's</span> until the modern day, describing the use of swords
+              and other weapons as a Western Martial Art. I practice in the
+              <a href="http://en.wikipedia.org/wiki/Johannes_Liechtenauer">Liechtenauer</a>
+              tradition, but other schools exist, some of which I've dabbled in.
+            </p>
 
-          <p>
-            I study and practice 15c. German longsword. There are a large collection of extant
-            manuscripts from the <span class="date">01300's</span> until the modern day, describing the use of swords
-            and other weapons as a Western Martial Art. I practice in the
-            <a href="http://en.wikipedia.org/wiki/Johannes_Liechtenauer">Liechtenauer</a>
-            tradition, but other schools exist, some of which I've dabbled in.
-          </p>
+            <p>
+              I was a part of an organization that performed educational demonstrations on
+              medieval and renaissance martial arts, arms and armor. We performed at schools, libraries,
+              and museums throughout the pacific northwest, notably the Seattle Art Museum's
+              <em>Spain in the Age of Exploration</em> exhibit in <span class="date">02004</span>.
+            </p>
 
-          <p>
-            I was a part of an organization that performed educational demonstrations on
-            medieval and renaissance martial arts, arms and armor. We performed at schools, libraries,
-            and museums throughout the pacific northwest, notably the Seattle Art Museum's
-            <em>Spain in the Age of Exploration</em> exhibit in <span class="date">02004</span>.
-          </p>
-
-          <p>
-            Stage combat and performance is a big part of demonstrations like this. I've had the
-            opportunity to act and perform stage combat on a few occasions, one of which resulted in
-            an <a href="http://www.imdb.com/name/nm3736097/">imdb</a> entry.
-          </p>
+            <p>
+              Stage combat and performance is a big part of demonstrations like this. I've had the
+              opportunity to act and perform stage combat on a few occasions, one of which resulted in
+              an <a href="http://www.imdb.com/name/nm3736097/">imdb</a> entry.
+            </p>
+          </div> <!-- .right -->
         </section>
       </div> <!-- #main -->
 

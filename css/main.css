@@ -11,10 +11,8 @@ textarea {
 }
 
 body {
-    font-size: 16pt;
-    line-height: 1.4;
-    color: #555555;
-    background-color: #fafafa;
+    font: 16pt/1.5em "Ubuntu Mono", sans-serif;
+    color: #555;
 }
 
 ::-moz-selection {
@@ -31,8 +29,8 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 2px dashed #555;
+    margin: 2em 0 1em 0;
     padding: 0;
 }
 
@@ -62,15 +60,80 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* indented text */
-div.main {
-    z-index: 10;
-    background-color: white;
-    padding: 0 30px 0 20px;
+nav#links {
+    margin: 1em 9px;
+
+}
+nav#links a {
+    margin-right: 20px;
+    color: #555;
 }
 
-section.subsection {
-    padding-left: 20px;
+
+/* indented text */
+div.main, section#preheader {
+    z-index: 10;
+    width: 1000px; /* start of wide grid, x10 */
+    background-color: white;
+    padding: 0 40px 0 20px;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#pre-wrapper {
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
+
+section#preheader {
+    height: 1em;
+    margin: auto;
+    font-size: 
+}
+
+section header {
+    float: left;
+}
+
+.left, .right {
+    margin: 10px;
+}
+
+.left {
+    width: 380px;
+    margin-left: 0;
+    float: left;
+}
+
+.right {
+    width: 600px;
+    margin-right: 0;
+    float: right;
+}
+
+hr.right {
+    margin: 1em 0 1em 10px;
+}
+
+p {
+    text-indent: 0;
+    padding-right: 20px;
+}
+
+p.first {
+  margin-top: 0;
+}
+
+.section {
+    /* for the hr.right div.section wrapper */
+    min-height: 2em;
+}
+
+section.section, section.subsection {
+    margin-top: 1em;
+    width: 1000px;
 }
 
 aside#left {
@@ -91,6 +154,8 @@ aside#left a {
 }
 
 nav#table-of-contents {
+    /* disable sidebar */
+    display: none;
     float: left;
     /*margin-right: 341px;*/
     width: auto;
@@ -122,7 +187,7 @@ nav#table-of-contents li.toc-title:before {
 
 /*// UNPUBLISHED subsections*/
 /*// OER section doesnt fit the overall flow without more content*/
-#oer, #yawnlog {
+#oer, #yawnlog, #other {
     display: none;
 }
 
@@ -133,26 +198,19 @@ nav#table-of-contents li.toc-title:before {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
-    font: 16px/1.4em 'Ubuntu', san-serif;
-}
-
 header.head {
-    border-bottom: 1px solid #c3c3c4;
+    /*border-bottom: 1px solid #c3c3c4;*/
+    margin-bottom: -10px;
 }
 
 h1, h2, h3, h4, h5 {
-  font: 32pt 'Vollkorn', serif;
-  line-height: 1em;
+  font: 16pt/1.5em "Ubuntu Mono", sans-serif;
+  /*color: #02CDE5;*/
+  color: #555;
 }
 
 h1 {
-  margin: 1em 0 .33em -3px;
-}
-
-h1 em {
-  color: #02cde5;
-  font-style: normal;
+  margin: 0;
 }
 
 h1 em:hover {
@@ -160,14 +218,36 @@ h1 em:hover {
   font-style: normal;
 }
 
+h1.title {
+  color: #555;
+  font-size: 96pt;
+  line-height: .82em;
+}
+
 h2 {
-  font-size: 27px;
-  text-transform: uppercase;
+  margin: 0;
+  /*line-height: 1.5em;*/
+  /*text-transform: uppercase;*/
 }
 
 h3 {
-  font-size: 23px;
+  margin: 0;
 }
+
+blockquote#about {
+    font: 16pt/1.5em "Ubuntu Mono", sans-serif;
+    /*color: #02CDE5;*/
+    color: #555;
+    margin: .5em 0;
+}
+
+blockquote#about a {
+    color: #02CDE5;
+}
+blockquote#about a:hover {
+  color: #ff7200;
+}
+
 
 a {
   color: #02cde5;
@@ -184,9 +264,7 @@ a:hover {
 }
 
 img {
-    border: 3px solid #c3c3c4;
-    box-shadow: 10px 10px 0 #c3c3c4;
-    margin: 1em;
+    padding: 1em 20px 1em 0;
 }
 
 .right {
@@ -200,10 +278,6 @@ table {
 
 td {
   width: 50%;
-}
-
-blockquote li {
-  list-style-type: none;
 }
 
 a.anchor {
@@ -256,11 +330,7 @@ header nav a:hover {
 
 .main blockquote {
     color: #ad3f3f;
-    padding: 0 5%;
     font-style: italic;
-    font:  24px Vollkorn, serif;
-    text-align: center;
-
 }
 
 .footer-container footer {
@@ -324,11 +394,13 @@ header nav a:hover {
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    header nav ul li {
+    /*nav#links ul li {
         display: inline;
         float: left;
-        padding-right: 40px;
-    }
+        padding-right: 20px;
+        font-size: 18pt;
+    }*/
+
 
     .oldie nav a {
         margin: 0 0.7%;
@@ -355,11 +427,6 @@ header nav a:hover {
         float: left;
     }
 
-    nav {
-        float: right;
-        width: 50%;
-        margin-right: -54px;
-    }
 
 /* ============
     WIDE: Main
