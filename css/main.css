@@ -116,6 +116,7 @@ section header {
 
 hr.right {
     margin: 1em 0 1em 10px;
+    width: 595px;
 }
 
 p {
@@ -239,6 +240,10 @@ h2 {
   margin: 0;
   /*line-height: 1.5em;*/
   /*text-transform: uppercase;*/
+}
+
+.subsection:first-child h2:before {
+    /*content: "01.";*/
 }
 
 h3 {
