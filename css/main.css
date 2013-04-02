@@ -253,10 +253,10 @@ blockquote#about {
 }
 
 blockquote#about a {
-    color: #02CDE5;
+    color: #555;
 }
 blockquote#about a:hover {
-  color: #ff7200;
+    color: #02CDE5;
 }
 
 
