@@ -77,5 +77,8 @@ publish:
 s3_upload: publish
 	aws s3 sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl public-read --delete
 
+venv: venv/bin/python requirements.txt
+	virtualenv venv
+	pip install -r requirements.txt
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish s3_upload
