@@ -15,7 +15,7 @@ DEFAULT_LANG = "en"
 THEME = "./theme/"
 DIRECT_TEMPLATES = ["writing"]
 TEMPLATE_PAGES = {
-    '
+    "index.html": "index.html",
 }
 CSS_FILE = "awsm.css"
 FEED_ALL_RSS = "./rss.xml"
@@ -32,7 +32,7 @@ DRAFT_SAVE_AS = "still-writing/{slug}/index.html"
 DRAFT_URL = "still-writing/{slug}/"
 TAG_SAVE_AS = "writing/by-tag/{slug}/index.html"
 TAG_URL = "writing/by-tag/{slug}/"
-WRITING_SAVE_AS = "writing"
+WRITING_SAVE_AS = "writing/index.html"
 
 # Blogroll
 LINKS = (
@@ -51,7 +51,7 @@ SOCIAL = (
     ("my Github", "https://github.com/sethwoodworth"),
 )
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
