@@ -1,6 +1,6 @@
 Title: Home Network Infrastructure on ARM64 SBC
 Date: 2019-03-30 12:12
-Tags: arm64 'Single-Board Computer' FOSS OpenWRT
+Tags: arm64, Single-Board Computer, FOSS, OpenWRT
 # Home Infrastructure Part 1: Espressobin v7
 
 I've been running DD-WRT on my router / WAP, a Linksys 1900ACS v2 for a few years.

@@ -1,9 +1,53 @@
 {% extends "base.html" %}
-{% block content %}
-<section id="content">
-{% block content_title %}
-<h2>posts</h2>
+
+{% block pagestyle %}
+<style>
+ul{
+  list-style:none;
+}
+ul::before, ul::after{
+  font-size:2rem;
+  margin-left:-1em;
+}
+ul::before {
+  content: "{";
+}
+ul::after {
+  content: "}";
+}
+</style>
 {% endblock %}
 
-</section><!-- /#content -->
+{% block subtitle %}
+...
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block content %}
+<p>
+... a data engineer, open sourcerer, pythonista, rogue archivist, and educator.
+</p>
+
+<section>
+  <ul>
+    <li>
+      <a href="/writing/">
+        writing
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/sethwoodworth/">
+        programming
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/sethwoodworth/sethwoodworth/blob/master/body.json">
+        biological
+      </a>
+    </li>
+</section>
 {% endblock content %}

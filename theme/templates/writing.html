@@ -6,7 +6,18 @@
   {{ super() }}
   <meta
     name="description"
-    content="Seth Wolfwood is writing... from time to time, often on tech projects I'm working on, or would like to work on">
+    content="Seth Wolfwood is writing a blog, from time to time, often on tech projects I'm working on, or would like to work on">
+{% endblock %}
+
+{% block pagestyle %}
+<style>
+ul {
+  list-style:none;
+}
+section > h1 {
+  font-size: 1.25em;
+}
+</style>
 {% endblock %}
 
 {% block content_title %}
@@ -15,29 +26,25 @@
 
 {% block content %}
 <section>
-
-  <ol id="post-list">
-  {% for article in articles.object_list %}
+  <ul>
+  {% for article in articles %}
     <li>
-      <article class="hentry">
-        <header> 
-          <h2 class="entry-title">
+      <article>
+        <header>
+          <h2>
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-          </h2> 
+          </h2>
+          <time
+            datetime="{{ article.date.isoformat() }}">
+            {{ article.date | strftime('0%Y-%M-%d') }}
+          </time>
         </header>
-        <footer class="post-info">
-            <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date | strftime('0%Y-%M-%d') }} </time>
-            <address class="vcard author">By
-            {% for author in article.authors %}
-                <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-            {% endfor %}
-            </address>
-        </footer><!-- /.post-info -->
-        <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        <section>
+          {{ article.summary }}
+        </section>
       </article>
     </li>
   {% endfor %}
-  </ol><!-- /#posts-list -->
-</section><!-- /#content -->
+  </ul>
+</section>
 {% endblock %}
-

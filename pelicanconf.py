@@ -1,10 +1,6 @@
-#!/usr/bin/env python
-from __future__ import unicode_literals
-
 AUTHOR = "seth wolfwood"
 SITENAME = "seth wolfwood is"
-# SITEURL = "https://seth.wolfwood.is"
-SITEURL = ""
+SITEURL = "https://seth.wolfwood.is"
 
 PATH = "content"
 
@@ -12,13 +8,19 @@ TIMEZONE = "America/New_York"
 
 DEFAULT_LANG = "en"
 
+# Theme
 THEME = "./theme/"
 DIRECT_TEMPLATES = ["writing"]
-TEMPLATE_PAGES = {
-    "index.html": "index.html",
-}
-CSS_FILE = "awsm.css"
+TEMPLATE_PAGES = {"index.html": "index.html"}
+MENUITEMS = (
+    ("writing", "/writing/"),
+    ("programming", "https://github.com/sethwoodworth/"),
+)
+
+# meta/head
+CSS_FILE = "awsm_theme_big-stone.css"
 FEED_ALL_RSS = "./rss.xml"
+FEED_ALL_ATOM = None
 
 # Page URLs
 ARTICLE_SAVE_AS = "writing/0{date:%Y}-{date:%m}-{date:%d}-{slug}/index.html"
@@ -54,4 +56,4 @@ SOCIAL = (
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True

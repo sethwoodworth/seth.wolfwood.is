@@ -1,51 +1,47 @@
 <!DOCTYPE html>
-<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<html lang="en-US">
 <head>
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
-        {% if FEED_RSS %}
-        <link href="{{ FEED_DOMAIN }}/{% if FEED_RSS_URL %}{{ FEED_RSS_URL }}{% else %}{{ FEED_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-        {% endif %}
-        {% endblock head %}
+  {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+
+    {% if FEED_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{% if FEED_RSS_URL %}{{ FEED_RSS_URL }}{% else %}{{ FEED_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+  {% endblock %}
+  {% block pagestyle %}
+  {% endblock %}
 </head>
 
-<body id="index">
+<body>
 
   <header>
-    <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+    <h1>
+      <a href="{{ SITEURL }}/">
+        Seth Wolfwood is {% block subtitle %}{% endblock %}
+      </a>
+    </h1>
+
+    {% block nav %}
+      <nav>
+        <ul>
+          {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endblock %}
   </header>
-
-  <nav id="menu"><ul>
-  {% for title, link in MENUITEMS %}
-    <li><a href="{{ link }}">{{ title }}</a></li>
-  {% endfor %}
-
-  {% if DISPLAY_PAGES_ON_MENU %}
-    {% for p in pages %}
-      <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-    {% endfor %}
-  {% endif %}
-
-  {% if DISPLAY_CATEGORIES_ON_MENU %}
-    {% for cat, null in categories %}
-      <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-    {% endfor %}
-  {% endif %}
-  </ul></nav><!-- /#menu -->
 
   <main>
   {% block content %}
   {% endblock %}
   </main>
 
-  <footer id="contentinfo" class="body">
-    <address id="about" class="vcard body">
-    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-    which takes great advantage of <a href="http://python.org">Python</a>.
-    </address><!-- /#about -->
-  </footer><!-- /#contentinfo -->
+  <footer>
+    build with <a href="http://python.org">🐍</a>&nbsp; but mainly <a href="http://getpelican.com/">pelican</a>, <a href="http://github.com/sethwoodworth/seth.wolfwood.is/">source</a>
+  </footer>
 </body>
 </html>
